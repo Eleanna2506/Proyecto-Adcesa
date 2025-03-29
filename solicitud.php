@@ -29,41 +29,34 @@
             <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
             <ul class="nav-list">
                 <li><a href="servicios.php"><i class="fa-solid fa-store" style="color: #ffffff;"></i></a></li>
-                <li><a href="solicitud.php"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></li>
+                <li><a href="solicitud.php"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-money-check-dollar" style="color: #ffffff;"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-comment" style="color: #ffffff;"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-bell" style= "color: #ffffff;"></i></a></li>
-                <li><a href="perfil.php"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a></li>
             </ul>
         </nav>
     </header>
-    <div class="infoEmpresa">
-        <div class="Empresa"><img src="./Imagenes/logo.png" alt="Empresa"> 
-        <h1>Exteriorizamos tus ideas</h1>
-    </div>
-    </div>
-    
-    <div class="servicios">
-        <div><img src="./Imagenes/display.jpg" alt="display"><h1>Display</h1></div>
-        <div><img src="./Imagenes/letreroluminoso.jpg" alt="letreroluminoso"><h1>Letrero luminoso</h1></div>
-        <div><img src="./Imagenes/vallapublicitaria.jpg" alt="vallapublicitaria"><h1>Valla</h1></div>
-        <div><img src="./Imagenes/stickers.jpg" alt="stickers"><h1>Stickers</h1></div>
-        <div><img src="./Imagenes/banderinespublicitarios.jpg" alt="banderinespublicitarios"><h1>Banderines</h1></div>
-    </div>
-
-    <div class="servicios">
-        <div><img src="./Imagenes/pendon.jpg" alt="pendon"><h1>Pendón</h1></div>
-        <div><img src="./Imagenes/cajaacrilica.jpg" alt="cajaacrilica"><h1>Caja acrilica</h1></div>
-        <div><img src="./Imagenes/recuerdos.jpg" alt="recuerdos"><h1>Recuerdos</h1></div>
-        <div><img src="./Imagenes/cartelerafiscal.jpg" alt="cartelerafiscal"><h1>Cartelera fiscal</h1></div>
-        <div><img src="./Imagenes/logocorporeoluminoso.jpg" alt="logocorporeoluminoso"><h1>Logo luminoso</h1></div>
-    </div>
-
-    <footer>
-    <div class="footer"><h3>Dirección</h3><p>Av. Páez entre calle Mérida y Apure, Casa Nro. 13-47, Centro Barinas, Zonal Postal 5201 - Venezuela</p></div>
-    <div class="footer"><h3>Contacto</h3><p>(+58) 424-5104676</p></div>
-    <div class="footer"><h3>Instagram</h3><p><a href="https://www.instagram.com/adcesapublicidad?igsh=cGh3b3dqZ3RlZWZq">adcesapublicidad<i class="fa-brands fa-instagram" style="color:rgb(10, 3, 110);"></i></a></p></div>
-    </footer>
-
-</body>
-</html>
+    <main>
+        <form action="Procesar_solicitud.php" method="POST" enctype="multipart/form-data">
+            <h1>Servicio a elegir</h1>
+            <select name="servicios" id="servicios">
+                <option value="Avisos">Avisos</option>
+                <option value="Banderines">Banderines</option>
+                <option value="Caja">Caja</option>
+                <option value="Display">Display</option>
+                <option value="Letrero">Letrero</option>
+                <option value="Logo">Logo</option>
+                <option value="Porta-Accesorios">Porta Accesorios</option>
+                <option value="Recuerdos">Recuerdos</option>
+                <option value="Rotulacion">Rotulación</option>
+                <option value="Stand">Stand</option>
+                <option value="Vallas">Vallas</option>
+            </select>
+            <h1>Descripcion del servicio</h1>
+            <textarea name="descripcion" id="descripcion" placeholder="Describa con exactitud como desea el producto"></textarea>
+            <h1>Subir una referencia</h1>
+            <input type="file" accept="image/*" name="referencia" id="referencia">
+            <button name="Enviar" value="Enviar">Enviar</button>
+        </form>
+    </main>
