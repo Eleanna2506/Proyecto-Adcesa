@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-image: linear-gradient(0deg, #02295D 0%, #02295D 100%);
+}
+
+.logoHeader {
+    max-width: 7rem;
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #12024e;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.nav-list li a i {
+    margin-left: 10px;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width:550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display:block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+    .abrir-menu{
+        color: black;
+    }
+    .cerrar-menu{
+        color: white;
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: blue;
+    }
+}
+.input{
+    width: 100%;
+    display: inline-flex;
+}
+.input label{
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+}
+.input p{
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
