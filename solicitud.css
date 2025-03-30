@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-image: linear-gradient(0deg, #02295D 0%, #02295D 100%);
+}
+
+.logoHeader {
+    max-width: 7rem;
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #12024e;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.nav-list li a i {
+    margin-left: 10px;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width:550px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display:block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: blue;
+    }
+}
+
+.significadoicono{
+    min-height: 10vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-optical-sizing: auto;
+    font-family: "Cherry Cream Soda", system-ui;
+    font-weight: 400;
+    font-style: normal;
+      }
+
+.pregunta {
+        color: #0232ce; 
+        font-family: "Poiret One", sans-serif;
+        font-weight: 800;
+        font-style: normal; 
+        background-image: linear-gradient(0deg, #ffffffd8 0%, #ffffff 100%);
+}
+
+.respuesta {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        height: 2rem;
+        width: 80%;
+        border-radius: 10px;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 4px 10px;
+        font-size: 18px;
+        background: transparent;
+        outline: none;
+        color: #000000;
+}
+
+.button{
+    background-color: #030161;
+    color: #fff;
+    border: none;
+    width: 10rem;
+    height: 2rem;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.button:hover{
+    background-color: #2e60ec;
+}
+
+footer{
+    height: 4rem;
+    background-image: linear-gradient(0deg, #0232ce 0%, #0232ce0c 100%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.footer{
+    text-align: center;
+    color: #000000;
+    font-family: "Kodchasan", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

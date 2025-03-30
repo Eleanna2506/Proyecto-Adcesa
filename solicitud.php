@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="solicitud.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,19 +11,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
 <header  class="header">
         <img class="logoHeader" src="./Imagenes/logo.png" alt="logo">
+        <h1 class="significadoicono">Solicitud del servicio</h1>
         <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
         <nav class="nav" id="nav">
             <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
@@ -39,8 +36,8 @@
     </header>
     <main>
         <form action="Procesar_solicitud.php" method="POST" enctype="multipart/form-data">
-            <h1>Servicio a elegir</h1>
-            <select name="servicios" id="servicios">
+            <h1 class="pregunta">Servicio</h1>
+            <select class="respuesta" name="servicios" id="servicios">
                 <option value="Avisos">Avisos</option>
                 <option value="Banderines">Banderines</option>
                 <option value="Caja">Caja</option>
@@ -53,10 +50,17 @@
                 <option value="Stand">Stand</option>
                 <option value="Vallas">Vallas</option>
             </select>
-            <h1>Descripcion del servicio</h1>
-            <textarea name="descripcion" id="descripcion" placeholder="Describa con exactitud como desea el producto"></textarea>
-            <h1>Subir una referencia</h1>
+            <h1 class="pregunta">Descripción</h1>
+            <textarea class="respuesta" name="descripcion" id="descripcion" placeholder="Describa con exactitud como desea el producto"></textarea>
+            <h1 class="pregunta">Referencia</h1>
             <input type="file" accept="image/*" name="referencia" id="referencia">
-            <button name="Enviar" value="Enviar">Enviar</button>
+            <button type="submit" class="button" name="Enviar" value="Enviar">Enviar</button>
         </form>
+
+        <footer>
+    <div class="footer"><h3>Dirección</h3><p>Av. Páez entre calle Mérida y Apure, Casa Nro. 13-47, Centro Barinas, Zonal Postal 5201 - Venezuela</p></div>
+    <div class="footer"><h3>Contacto</h3><p>(+58) 424-5104676</p></div>
+    <div class="footer"><h3>Instagram</h3><p><a href="https://www.instagram.com/adcesapublicidad?igsh=cGh3b3dqZ3RlZWZq">adcesapublicidad<i class="fa-brands fa-instagram" style="color:rgb(10, 3, 110);"></i></a></p></div>
+    </footer>
+
     </main>

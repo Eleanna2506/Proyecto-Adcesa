@@ -141,7 +141,7 @@
 
 footer{
     height: 4rem;
-    background-image: linear-gradient(0deg, #006effcb 0%, #02295d0c 100%);
+    background-image: linear-gradient(0deg, #0232ce 0%, #0232ce0c 100%);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
