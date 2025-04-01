@@ -19,10 +19,9 @@ if (move_uploaded_file($_FILES['referencia']['tmp_name'], $rutaDestino)) {
 $stmt = $conex->prepare($sql);
 $stmt->bind_param("isss", $idUsuario, $servicio, $descripcion, $rutaDestino);
 $stmt->execute();
-$result = $stmt->get_result();
 
 // Ejecutar la consulta
-if ( $result->fetch_assoc()) {
+if ( $stmt->get_result()) {
 echo "solicitud registrada correctamente";
 } else {
 echo "Error al subir la solicitud: " . $conex->error;

@@ -79,6 +79,7 @@
 
 .pregunta {
         color: #0232ce; 
+        font-size: 30px;
         font-family: "Poiret One", sans-serif;
         font-weight: 800;
         font-style: normal; 
@@ -100,6 +101,14 @@
         background: transparent;
         outline: none;
         color: #000000;
+}
+
+.columna {
+    font-size: 3rem;
+    color: #ffffff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
 }
 
 .button{

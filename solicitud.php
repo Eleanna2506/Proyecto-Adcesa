@@ -35,6 +35,7 @@
         </nav>
     </header>
     <main>
+    <div class="columna">
         <form action="Procesar_solicitud.php" method="POST" enctype="multipart/form-data">
             <h1 class="pregunta">Servicio</h1>
             <select class="respuesta" name="servicios" id="servicios">
@@ -50,12 +51,14 @@
                 <option value="Stand">Stand</option>
                 <option value="Vallas">Vallas</option>
             </select>
+
             <h1 class="pregunta">Descripción</h1>
             <textarea class="respuesta" name="descripcion" id="descripcion" placeholder="Describa con exactitud como desea el producto"></textarea>
             <h1 class="pregunta">Referencia</h1>
             <input type="file" accept="image/*" name="referencia" id="referencia">
             <button type="submit" class="button" name="Enviar" value="Enviar">Enviar</button>
         </form>
+        </div>
 
         <footer>
     <div class="footer"><h3>Dirección</h3><p>Av. Páez entre calle Mérida y Apure, Casa Nro. 13-47, Centro Barinas, Zonal Postal 5201 - Venezuela</p></div>
