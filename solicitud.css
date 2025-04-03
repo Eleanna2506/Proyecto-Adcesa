@@ -22,6 +22,11 @@
     display: flex;
     gap: 1rem;
 }
+#referencia{
+   
+    background-color: #bbbaf3;
+    color: #000000;
+}
 
 .nav-list li a {
     text-decoration: none;
