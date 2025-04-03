@@ -40,9 +40,9 @@ $clave = $_SESSION['clave'];
             <ul class="nav-list">
                 <li><a href="servicios.php"><i class="fa-solid fa-store" style="color: #ffffff;"></i></a></li>
                 <li><a href="solicitud.php"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-money-check-dollar" style="color: #ffffff;"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-comment" style="color: #ffffff;"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-bell" style= "color: #ffffff;"></i></a></li>
+                <li><a href="facturacion.php"><i class="fa-solid fa-money-check-dollar" style="color: #ffffff;"></i></a></li>
+                <li><a href="mensajeria.php"><i class="fa-solid fa-comment" style="color: #ffffff;"></i></a></li>
+                <li><a href="notificaciones.php"><i class="fa-solid fa-bell" style= "color: #ffffff;"></i></a></li>
                 <li><a href="perfil.php"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a></li>
             </ul>
         </nav>
@@ -100,6 +100,13 @@ $clave = $_SESSION['clave'];
             <label for="clave">Contraseña: </label>
         <p><?php echo $clave ?></p>
         </div>
-        </div> 
+        </div>
+        
+        <footer>
+    <div class="footer"><h3>Dirección</h3><p>Av. Páez entre calle Mérida y Apure, Casa Nro. 13-47, Centro Barinas, Zonal Postal 5201 - Venezuela</p></div>
+    <div class="footer"><h3>Contacto</h3><p>(+58) 424-5104676</p></div>
+    <div class="footer"><h3>Instagram</h3><p><a href="https://www.instagram.com/adcesapublicidad?igsh=cGh3b3dqZ3RlZWZq">adcesapublicidad<i class="fa-brands fa-instagram" style="color:rgb(10, 3, 110);"></i></a></p></div>
+    </footer>
 
     </main>
+    <body>

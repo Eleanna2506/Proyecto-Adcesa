@@ -24,16 +24,16 @@
             <ul class="nav-list">
                 <li><a href="servicios.php"><i class="fa-solid fa-store" style="color: #ffffff;"></i></a></li>
                 <li><a href="solicitud.php"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-money-check-dollar" style="color: #ffffff;"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-comment" style="color: #ffffff;"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-bell" style= "color: #ffffff;"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a></li>
+                <li><a href="facturacion.php"><i class="fa-solid fa-money-check-dollar" style="color: #ffffff;"></i></a></li>
+                <li><a href="mensajeria.php"><i class="fa-solid fa-comment" style="color: #ffffff;"></i></a></li>
+                <li><a href="notificacion.php"><i class="fa-solid fa-bell" style= "color: #ffffff;"></i></a></li>
+                <li><a href="perfil.php"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a></li>
             </ul>
         </nav>
     </header>
     <main>
     <div class="columna">
-        <form action="Procesar_solicitud.php" method="POST" enctype="multipart/form-data">
+        <form action="Procesar_solicitud.php" method="POST" enctype="multipart/form-data" id="procesarSolicitud">
             <h1 class="pregunta">Servicio</h1>
             <select class="respuesta" name="servicios" id="servicios">
                 <option value="Avisos">Avisos</option>
@@ -56,11 +56,34 @@
             <button type="submit" class="button" name="Enviar" value="Enviar">Enviar</button>
         </form>
         </div>
+        <div class="solicitud" id="solicitud">
+            <div class="datos">
+                <div class="nombre">
+                <p>nombre:</p>
+                <p>apellido:</p><!--primer nombre primer apellido -->
+                <p>fecha</p>
+                </div>
+            <div class="buttom">
+            <p>modificar y eliminar</p>
+            </div>
+        </div>
+        <div class="informacion">
+        <div class="informacionSolicitud">
+        <h2>solicitud</h2>
+        <label>Servicio:</label>
+        <label>Descripcion:</label>
+        <label>Referencia:</label>
+        </div>
+        <div class="mensajeria"></div>
+        </div>
+        </div>
 
         <footer>
     <div class="footer"><h3>Dirección</h3><p>Av. Páez entre calle Mérida y Apure, Casa Nro. 13-47, Centro Barinas, Zonal Postal 5201 - Venezuela</p></div>
     <div class="footer"><h3>Contacto</h3><p>(+58) 424-5104676</p></div>
     <div class="footer"><h3>Instagram</h3><p><a href="https://www.instagram.com/adcesapublicidad?igsh=cGh3b3dqZ3RlZWZq">adcesapublicidad<i class="fa-brands fa-instagram" style="color:rgb(10, 3, 110);"></i></a></p></div>
     </footer>
-
+    <script src="solicitud.js"></script>
     </main>
+</body>
+</html>

@@ -146,6 +146,10 @@ footer{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 8px;
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .footer{

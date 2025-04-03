@@ -24,9 +24,9 @@
             <ul class="nav-list">
                 <li><a href="servicios.php"><i class="fa-solid fa-store" style="color: #ffffff;"></i></a></li>
                 <li><a href="solicitud.php"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-money-check-dollar" style="color: #ffffff;"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-comment" style="color: #ffffff;"></i></a></li>
-                <li><a href="#"><i class="fa-solid fa-bell" style= "color: #ffffff;"></i></a></li>
+                <li><a href="facturacion.php"><i class="fa-solid fa-money-check-dollar" style="color: #ffffff;"></i></a></li>
+                <li><a href="mensajeria.php"><i class="fa-solid fa-comment" style="color: #ffffff;"></i></a></li>
+                <li><a href="notificacion.php"><i class="fa-solid fa-bell" style= "color: #ffffff;"></i></a></li>
                 <li><a href="perfil.php"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a></li>
             </ul>
         </nav>

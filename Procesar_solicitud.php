@@ -24,7 +24,7 @@ $stmt->execute();
 if ( $stmt->get_result()) {
 echo "solicitud registrada correctamente";
 } else {
-echo "Error al subir la solicitud: " . $conex->error;
+echo "Error al subir la solicitud: ";
 } 
 } else {
     echo "Error al subir la referencia.";
