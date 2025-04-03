@@ -7,9 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +23,7 @@
             <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
             <ul class="nav-list">
                 <li><a href="servicios.php"><i class="fa-solid fa-store" style="color: #ffffff;"></i></a></li>
-                <li><a href="solicitud.php"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></a></li>
+                <li><a href="solicitud.php"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-money-check-dollar" style="color: #ffffff;"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-comment" style="color: #ffffff;"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-bell" style= "color: #ffffff;"></i></a></li>
