@@ -22,6 +22,11 @@
     display: flex;
     gap: 1rem;
 }
+#referencia{
+   
+    background-color: #bbbaf3;
+    color: #000000;
+}
 
 .nav-list li a {
     text-decoration: none;
@@ -146,39 +151,4 @@ footer{
     font-family: "Kodchasan", sans-serif;
     font-weight: 400;
     font-style: normal;
-}
-#referencia {
-    background-color: #99b0fa;
-    color: #000000;
-}
-.solicitud{
-    display: flex;
-    flex-direction: column;
-    background-color: #a4bdff;
-    width: 100%;
-}
-.datos{
-    width: 100%;
-    display: inline-flex;
-    padding: 0px 15px;
-    justify-content: space-between;
-    background-color: rgb(247, 144, 144);
-}
-.datos .nombre{
-    display: flex;
-    flex-direction: column;
-}
-.informacion{
-    display: inline-flex;
-}
-.informacionSolicitud{
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    background-color: rgb(255, 254, 168);
-    text-align: center;
-}
-.mensajeria{
-    width: 70%;
-    background-color: green;
 }
